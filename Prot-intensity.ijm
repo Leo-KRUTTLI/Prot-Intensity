@@ -37,7 +37,7 @@ continue;
 
  getDimensions(width, height, channels, slices, frames);
         // Resize the image
-        run("Canvas Size...", "width=" + width*6 +" height=" + width*6 +" position=Center zero");
+        run("Canvas Size...", "width=" + width*6 +" height=" + height*6 +" position=Center zero");
         // Scale the image
         run("Scale...", "x=6 y=6 z=1.0 interpolation=Bilinear average" );
         run("Set Scale...", "known=" + 1/6 +" pixel=1");
